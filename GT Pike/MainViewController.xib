@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainViewController">
+            <connections>
+                <outlet property="membToBottomSpace" destination="fQ0-kc-ruT" id="DFg-CY-8Rc"/>
+                <outlet property="membersButton" destination="2vG-Ux-u4q" id="fM3-4P-KpS"/>
+                <outlet property="membersHeight" destination="A7S-jD-9Tq" id="AWa-mB-MS4"/>
+                <outlet property="membersWidth" destination="0fT-Ep-8MD" id="s4a-sU-VRC"/>
+                <outlet property="menToMembSpace" destination="nCZ-gI-Dd6" id="i02-na-9n0"/>
+                <outlet property="menuButton" destination="QOX-lc-3wy" id="d1l-FS-PXX"/>
+                <outlet property="menuHeight" destination="czM-t8-WzE" id="hBc-Ns-bFf"/>
+                <outlet property="menuWidth" destination="GyP-3g-59w" id="g0H-7O-4zy"/>
+                <outlet property="newsButton" destination="w6I-Zd-DIx" id="qVy-JE-oAe"/>
+                <outlet property="newsHeight" destination="b4l-Nq-CWP" id="FtZ-gi-ipX"/>
+                <outlet property="newsToMenSpace" destination="rQW-aP-oMM" id="SBi-RF-Tz0"/>
+                <outlet property="newsWidth" destination="55y-b0-Dbb" id="7P5-Xt-syR"/>
+                <outlet property="topToNewsSpace" destination="yFg-xM-mrW" id="Evq-Zi-SLL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sh5-CH-ufd">
+                    <rect key="frame" x="234" y="35" width="134" height="39"/>
+                    <attributedString key="attributedText">
+                        <fragment content="GT">
+                            <attributes>
+                                <color key="NSColor" red="1" green="0.83137254901960789" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="36" name="HelveticaNeue-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" Pike">
+                            <attributes>
+                                <color key="NSColor" red="0.69803921568627447" green="0.0" blue="0.086274509803921567" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="36" name="HelveticaNeue-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2vG-Ux-u4q">
+                    <rect key="frame" x="250" y="371" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="0fT-Ep-8MD"/>
+                        <constraint firstAttribute="height" constant="100" id="A7S-jD-9Tq"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="MembersIcon.jpg">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                    <connections>
+                        <action selector="goToMembersView" destination="-1" eventType="touchUpInside" id="GCx-Uk-kSj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QOX-lc-3wy">
+                    <rect key="frame" x="250" y="241" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="GyP-3g-59w"/>
+                        <constraint firstAttribute="height" constant="100" id="czM-t8-WzE"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="MenuIcon.jpg">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                    <connections>
+                        <action selector="goToMenuView" destination="-1" eventType="touchUpInside" id="lLe-FZ-tgj"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xA9-P9-YId">
+                    <rect key="frame" x="0.0" y="78" width="600" height="3"/>
+                    <color key="backgroundColor" red="0.7607843876" green="0.1019607931" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="Vx4-s6-U5d"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w6I-Zd-DIx">
+                    <rect key="frame" x="250" y="111" width="100" height="100"/>
+                    <color key="backgroundColor" red="0.99215692280000001" green="0.99607849120000003" blue="0.99215692280000001" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="55y-b0-Dbb"/>
+                        <constraint firstAttribute="height" constant="100" id="b4l-Nq-CWP"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="NewsIcon4.jpg">
+                        <attributedString key="attributedTitle"/>
+                    </state>
+                    <connections>
+                        <action selector="goToNewsView" destination="-1" eventType="touchUpInside" id="8LC-qC-ug9"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="sh5-CH-ufd" secondAttribute="centerX" id="3km-kv-Qan"/>
+                <constraint firstItem="w6I-Zd-DIx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="111" id="CWy-o7-qDG"/>
+                <constraint firstAttribute="bottom" secondItem="2vG-Ux-u4q" secondAttribute="bottom" constant="30" id="FLu-NF-Uhz"/>
+                <constraint firstAttribute="centerX" secondItem="QOX-lc-3wy" secondAttribute="centerX" id="JEA-2D-wDM"/>
+                <constraint firstItem="2vG-Ux-u4q" firstAttribute="width" secondItem="QOX-lc-3wy" secondAttribute="width" id="PB9-yg-Q51"/>
+                <constraint firstAttribute="centerX" secondItem="w6I-Zd-DIx" secondAttribute="centerX" id="PLl-pU-Gzd"/>
+                <constraint firstAttribute="centerX" secondItem="2vG-Ux-u4q" secondAttribute="centerX" id="ap1-x8-ES2"/>
+                <constraint firstAttribute="bottom" secondItem="2vG-Ux-u4q" secondAttribute="bottom" constant="129" id="fQ0-kc-ruT"/>
+                <constraint firstItem="xA9-P9-YId" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gFX-83-EV8"/>
+                <constraint firstItem="xA9-P9-YId" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="78" id="ltE-4a-TdW"/>
+                <constraint firstItem="2vG-Ux-u4q" firstAttribute="top" secondItem="QOX-lc-3wy" secondAttribute="bottom" constant="30" id="nCZ-gI-Dd6"/>
+                <constraint firstItem="2vG-Ux-u4q" firstAttribute="height" secondItem="w6I-Zd-DIx" secondAttribute="height" id="r7m-1D-YOC"/>
+                <constraint firstItem="2vG-Ux-u4q" firstAttribute="width" secondItem="w6I-Zd-DIx" secondAttribute="height" multiplier="1:1" id="rIk-F8-yhw"/>
+                <constraint firstItem="QOX-lc-3wy" firstAttribute="top" secondItem="w6I-Zd-DIx" secondAttribute="bottom" constant="30" id="rQW-aP-oMM"/>
+                <constraint firstItem="2vG-Ux-u4q" firstAttribute="width" secondItem="w6I-Zd-DIx" secondAttribute="width" id="sRm-H3-erJ"/>
+                <constraint firstItem="2vG-Ux-u4q" firstAttribute="height" secondItem="QOX-lc-3wy" secondAttribute="height" id="vmr-4E-ZEF"/>
+                <constraint firstItem="sh5-CH-ufd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="wQj-pV-8MN"/>
+                <constraint firstItem="2vG-Ux-u4q" firstAttribute="width" secondItem="QOX-lc-3wy" secondAttribute="height" multiplier="1:1" id="xBN-vs-jBN"/>
+                <constraint firstItem="w6I-Zd-DIx" firstAttribute="top" secondItem="xA9-P9-YId" secondAttribute="bottom" constant="30" id="yFg-xM-mrW"/>
+                <constraint firstAttribute="trailing" secondItem="xA9-P9-YId" secondAttribute="trailing" id="zJI-oY-JgW"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="yFg-xM-mrW"/>
+                    <exclude reference="FLu-NF-Uhz"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="MembersIcon.jpg" width="432" height="432"/>
+        <image name="MenuIcon.jpg" width="432" height="432"/>
+        <image name="NewsIcon4.jpg" width="432" height="432"/>
+    </resources>
+</document>

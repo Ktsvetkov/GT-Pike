@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController">
+            <connections>
+                <outlet property="backButton" destination="K3D-bc-nfM" id="pRJ-hs-lJ0"/>
+                <outlet property="backButtonHeight" destination="ZQh-rb-QuG" id="CCm-Kb-pAN"/>
+                <outlet property="backButtonWidth" destination="7fo-i4-4Wo" id="cTS-R0-KAd"/>
+                <outlet property="errorText" destination="0pk-BZ-JZH" id="I4Y-zr-kex"/>
+                <outlet property="pdfView" destination="wTf-Wl-PZe" id="Hyb-M1-xfg"/>
+                <outlet property="pinchToZoomLabel" destination="FA8-yt-tec" id="7PT-tz-pnr"/>
+                <outlet property="progressBar" destination="nXZ-G7-npa" id="tvl-fZ-eNA"/>
+                <outlet property="scrollView" destination="BzB-AC-t4K" id="IMv-PR-Ee6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" maximumZoomScale="2" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzB-AC-t4K">
+                    <rect key="frame" x="0.0" y="81" width="600" height="519"/>
+                    <subviews>
+                        <webView opaque="NO" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" allowsInlineMediaPlayback="NO" mediaPlaybackRequiresUserAction="NO" mediaPlaybackAllowsAirPlay="NO" keyboardDisplayRequiresUserAction="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTf-Wl-PZe">
+                            <rect key="frame" x="50" y="139" width="501" height="242"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="wTf-Wl-PZe" secondAttribute="height" multiplier="200:173" id="5LA-Lt-3s3"/>
+                                <constraint firstAttribute="height" constant="519" id="APg-oY-gw6"/>
+                                <constraint firstAttribute="width" constant="100" id="LfE-y7-F1R"/>
+                                <constraint firstAttribute="height" constant="100" id="srb-r1-E0x"/>
+                            </constraints>
+                            <dataDetectorType key="dataDetectorTypes"/>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="APg-oY-gw6"/>
+                                </mask>
+                            </variation>
+                        </webView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="wTf-Wl-PZe" secondAttribute="trailing" id="NOW-1N-RCt"/>
+                        <constraint firstItem="wTf-Wl-PZe" firstAttribute="leading" secondItem="BzB-AC-t4K" secondAttribute="leading" id="O7c-fU-IHa"/>
+                        <constraint firstAttribute="centerX" secondItem="wTf-Wl-PZe" secondAttribute="centerX" id="lJv-os-kig"/>
+                        <constraint firstAttribute="centerY" secondItem="wTf-Wl-PZe" secondAttribute="centerY" constant="30" id="mEf-2x-N5w"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gOu-sk-3fc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="81"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="81" id="4rH-zt-y5y"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fa-fp-Cfq">
+                    <rect key="frame" x="252" y="35" width="100" height="39"/>
+                    <attributedString key="attributedText">
+                        <fragment content="Menu">
+                            <attributes>
+                                <color key="NSColor" white="0.22415865384615388" alpha="1" colorSpace="calibratedWhite"/>
+                                <font key="NSFont" size="36" name="HelveticaNeue-Bold"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGX-xm-xgA">
+                    <rect key="frame" x="0.0" y="78" width="600" height="3"/>
+                    <color key="backgroundColor" red="0.7607843876" green="0.1019607931" blue="0.10588236149999999" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="f2S-cf-5Pq"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="nXZ-G7-npa">
+                    <rect key="frame" x="290" y="290" width="20" height="20"/>
+                </activityIndicatorView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0pk-BZ-JZH">
+                    <rect key="frame" x="211" y="275" width="178" height="51"/>
+                    <attributedString key="attributedText">
+                        <fragment>
+                            <string key="content">Error Loading.
+Check Internet Connection.
+</string>
+                            <attributes>
+                                <font key="NSFont" size="12" name="Cambria"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" tailIndent="432" defaultTabInterval="36">
+                                    <tabStops/>
+                                </paragraphStyle>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3D-bc-nfM">
+                    <rect key="frame" x="470" y="470" width="120" height="120"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="7fo-i4-4Wo"/>
+                        <constraint firstAttribute="height" constant="120" id="ZQh-rb-QuG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
+                    <state key="normal" title="Back">
+                        <color key="titleColor" red="0.3294117647" green="0.3294117647" blue="0.3294117647" alpha="1" colorSpace="deviceRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="backToMain" destination="-1" eventType="touchUpInside" id="Xzn-qF-6bG"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FA8-yt-tec">
+                    <rect key="frame" x="-8" y="563" width="218" height="43"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="218" id="DT7-jq-tOS"/>
+                        <constraint firstAttribute="height" constant="43" id="ndi-E7-qpx"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="&quot;Pinch To Zoom&quot;">
+                            <attributes>
+                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="24" name="HelveticaNeue-LightItalic"/>
+                                <font key="NSOriginalFont" size="24" name="HelveticaNeue-LightItalic"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="FA8-yt-tec" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="-8" id="6cw-o2-3J5"/>
+                <constraint firstItem="lGX-xm-xgA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="78" id="FyH-gI-faD"/>
+                <constraint firstAttribute="centerX" secondItem="nXZ-G7-npa" secondAttribute="centerX" id="Hcl-hn-THi"/>
+                <constraint firstAttribute="centerX" secondItem="0pk-BZ-JZH" secondAttribute="centerX" id="HjX-wq-T8U"/>
+                <constraint firstAttribute="trailing" secondItem="gOu-sk-3fc" secondAttribute="trailing" id="JBr-58-j8Y"/>
+                <constraint firstItem="gOu-sk-3fc" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Roq-Tk-mgh"/>
+                <constraint firstAttribute="centerY" secondItem="0pk-BZ-JZH" secondAttribute="centerY" id="UA0-TB-5bd"/>
+                <constraint firstAttribute="centerY" secondItem="nXZ-G7-npa" secondAttribute="centerY" id="Y6r-9b-0Um"/>
+                <constraint firstItem="gOu-sk-3fc" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZIZ-6q-YQX"/>
+                <constraint firstAttribute="bottom" secondItem="BzB-AC-t4K" secondAttribute="bottom" id="Zdw-me-FdG"/>
+                <constraint firstAttribute="bottom" secondItem="FA8-yt-tec" secondAttribute="bottom" constant="-6" id="ZsT-Pa-UTF"/>
+                <constraint firstItem="BzB-AC-t4K" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="81" id="aFY-e8-GSA"/>
+                <constraint firstItem="BzB-AC-t4K" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="d3S-15-xUb"/>
+                <constraint firstAttribute="bottom" secondItem="K3D-bc-nfM" secondAttribute="bottom" constant="10" id="ht0-sG-fAL"/>
+                <constraint firstAttribute="trailing" secondItem="BzB-AC-t4K" secondAttribute="trailing" id="kZA-8D-Of2"/>
+                <constraint firstAttribute="trailing" secondItem="lGX-xm-xgA" secondAttribute="trailing" id="kuy-Js-dGX"/>
+                <constraint firstAttribute="trailing" secondItem="K3D-bc-nfM" secondAttribute="trailing" constant="10" id="opM-dZ-kun"/>
+                <constraint firstItem="lGX-xm-xgA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rOm-tA-VPu"/>
+                <constraint firstItem="3Fa-fp-Cfq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="35" id="unl-52-8gr"/>
+                <constraint firstAttribute="centerX" secondItem="3Fa-fp-Cfq" secondAttribute="centerX" id="yJ4-ff-wuR"/>
+            </constraints>
+            <point key="canvasLocation" x="415" y="488"/>
+        </view>
+    </objects>
+</document>
